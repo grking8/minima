@@ -14,9 +14,6 @@
               {{ site.title | escape }}
             {% endif %}
             </li>
-            {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
         </ul>
       </div>
 
@@ -37,6 +34,12 @@
           {% if site.facebook_username %}
           <li>
             {% include icon-facebook.html username=site.facebook_username %}
+          </li>
+          {% endif %}
+
+          {% if site.email %}
+          <li>
+            {% include icon-email.html username=site.email %}
           </li>
           {% endif %}
         </ul>
