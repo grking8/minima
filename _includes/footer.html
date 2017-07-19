@@ -15,6 +15,11 @@
             {% endif %}
             </li>
         </ul>
+        {% for file in site.static_files %}
+          {% if file.path == site.headshot %}
+            <img src="{{ file.path }}">
+          {% endif %}
+        {% endfor %}
       </div>
 
       <div class="footer-col footer-col-2">
