@@ -37,6 +37,12 @@
           </li>
           {% endif %}
 
+          {% if site.google_plus_id %}
+          <li>
+            {% include icon-google-plus.html id=site.google_plus_id %}
+          </li>
+          {% endif %}
+
           {% if site.email %}
           <li>
             {% include icon-email.html email=site.email %}
