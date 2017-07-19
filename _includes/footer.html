@@ -43,6 +43,12 @@
           </li>
           {% endif %}
 
+          {% if site.skype_username %}
+          <li>
+            {% include icon-skype.html username=site.skype_username %}
+          </li>
+          {% endif %}
+
           {% if site.email %}
           <li>
             {% include icon-email.html email=site.email %}
