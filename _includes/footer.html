@@ -17,7 +17,7 @@
         </ul>
         {% for file in site.static_files %}
           {% if file.path == site.headshot %}
-            <img src="{{ file.path }}">
+            {% include headshot.html image=file.path %}
           {% endif %}
         {% endfor %}
       </div>
