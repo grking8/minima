@@ -78,6 +78,10 @@ ul, ol {
 }
 
 li {
+  display: inline;
+}
+
+li {
   > ul,
   > ol {
     margin-bottom: 0;
