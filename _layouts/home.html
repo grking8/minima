@@ -13,52 +13,51 @@ layout: default
           {% include headshot.html image=file.path %}
         {% endif %}
       {% endfor %}
+      
+      <div>
+        <ul class="social-media-list">
+          {% if site.github_username %}
+          <li>
+            {% include icon-github.html username=site.github_username %}
+          </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+          <li>
+            {% include icon-twitter.html username=site.twitter_username %}
+          </li>
+          {% endif %}
+
+          {% if site.facebook_username %}
+          <li>
+            {% include icon-facebook.html username=site.facebook_username %}
+          </li>
+          {% endif %}
+
+          {% if site.google_plus_id %}
+          <li>
+            {% include icon-google-plus.html id=site.google_plus_id %}
+          </li>
+          {% endif %}
+
+          {% if site.skype_username %}
+          <li>
+            {% include icon-skype.html username=site.skype_username %}
+          </li>
+          {% endif %}
+
+          {% if site.email %}
+          <li>
+            {% include icon-email.html email=site.email %}
+          </li>
+          {% endif %}
+        </ul>
+      </div>
     </div>
 
     <div class="footer-col footer-col-2">
       <p>{{ site.description | escape }}</p>
-
     </div>
-  </div>
-
-  <div>
-    <ul class="social-media-list">
-      {% if site.github_username %}
-      <li>
-        {% include icon-github.html username=site.github_username %}
-      </li>
-      {% endif %}
-
-      {% if site.twitter_username %}
-      <li>
-        {% include icon-twitter.html username=site.twitter_username %}
-      </li>
-      {% endif %}
-
-      {% if site.facebook_username %}
-      <li>
-        {% include icon-facebook.html username=site.facebook_username %}
-      </li>
-      {% endif %}
-
-      {% if site.google_plus_id %}
-      <li>
-        {% include icon-google-plus.html id=site.google_plus_id %}
-      </li>
-      {% endif %}
-
-      {% if site.skype_username %}
-      <li>
-        {% include icon-skype.html username=site.skype_username %}
-      </li>
-      {% endif %}
-
-      {% if site.email %}
-      <li>
-        {% include icon-email.html email=site.email %}
-      </li>
-      {% endif %}
-    </ul>
   </div>
   
 </div>
