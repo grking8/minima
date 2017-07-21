@@ -121,6 +121,11 @@
   margin-left: 0;
 }
 
+.social-media {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .footer-col-wrapper {
   @include relative-font-size(0.9375);
   color: $grey-color;
