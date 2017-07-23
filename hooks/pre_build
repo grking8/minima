@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "=> Build the site using jekyll"  
+mkdir -p _site  
+docker run --volume=$(pwd):/srv/jekyll jekyll/jekyll jekyll build
