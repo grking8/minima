@@ -126,9 +126,17 @@
   padding-bottom: 30px;
 }
 
-.footer-col-wrapper {
-  @include relative-font-size(1.25);
+.footer-wrapper {
+  @include relative-font-size(0.9375);
+  margin-right: auto;
+  margin-left: auto;
   color: $grey-color;
+  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+}
+
+.footer-col-wrapper {
+  @include relative-font-size(1);
   margin-left: -$spacing-unit / 2;
   @extend %clearfix;
 }
