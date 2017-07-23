@@ -133,6 +133,7 @@
   color: $grey-color;
   max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
   max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+  padding-left: $spacing-unit / 2;
 }
 
 .footer-col-wrapper {
