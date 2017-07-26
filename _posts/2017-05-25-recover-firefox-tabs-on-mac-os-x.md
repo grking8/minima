@@ -5,6 +5,8 @@ title: Recover Firefox Tabs On Mac OS X
 
 ### Keeping tabs
 
+{% include post-image.html name="firefox.png" %}
+
 If you lose unbookmarked tabs in Firefox and for whatever reason History->Restore doesn't bring them back, all is not lost. You could regoogle them or sift through your search history.
 
 However, there is an easier way *if your system files are backed up regularly,* e.g. via [Time Machine.](https://en.wikipedia.org/wiki/Time_Machine_(macOS)) In this case, the snapshot taken during the last backup includes files Firefox uses to restore previous sessions.
