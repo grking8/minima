@@ -5,7 +5,7 @@ title: Recover Firefox Tabs On Mac OS X
 
 ### Keeping tabs
 
-{% include post-image.html name="firefox.png" %}
+{% include post-image.html name="firefox.png" width="100" height="100" alt="Firefox logo" %}
 
 If you lose unbookmarked tabs in Firefox and for whatever reason History->Restore doesn't bring them back, all is not lost. You could regoogle them or sift through your search history.
 
