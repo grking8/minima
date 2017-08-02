@@ -65,7 +65,7 @@ var businesses = [
 
 You want to output the business ids sorted by rating (highest to lowest), with businesses with the same rating respecting the order above.
 
-In O(n) time, something like
+Something like
       
 {% highlight javascript %}
 var k = 5,
@@ -88,7 +88,7 @@ result.reverse();
 console.log(result);
 {% endhighlight %}
 
-which outputs
+which runs in in O(n) time and outputs
 {% highlight javascript %}
 [ 935, 9953, 123, 6889, 4487, 72, 283, 4684, 9483, 8958 ]
 {% endhighlight %}
