@@ -6,7 +6,7 @@ order: 4
 ---
 
 **2017 --**
-:   Python Developer, [Lambert Labs](https://www.linkedin.com/company/lambertlabs)
+:   Python Developer, [Lambert Labs](https://lambertlabs.com/)
 
 <br>
 **2016 --**
