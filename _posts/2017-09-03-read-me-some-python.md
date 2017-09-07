@@ -55,13 +55,15 @@ print('The solution is {}'.format(S))
 
 - [Collatz conjecture](https://en.wikipedia.org/wiki/Collatz_conjecture)
 
-brute force
+Brute force < memoization < memoization with recursion
+
+Brute force
 
 {% highlight python %}
 N = 1000000
 number_of_terms = [0] * (N + 1)
 
-for i in range(1, N + 1):
+for i in range(1, len(number_of_terms)):
     current = i
     counter = 1
     while current != 1:
@@ -74,14 +76,14 @@ for i in range(1, N + 1):
     number_of_terms[i] = counter
 {% endhighlight %}
 
-< memoization
+Memoization
 
 {% highlight python %}
 N = 1000000
 number_of_terms = [0] * (N + 1)
 number_of_terms[1] = 1
 
-for i in range(2, N + 1):
+for i in range(2, len(number_of_terms)):
     current = i
     counter = 1
     while current >= i:
@@ -95,7 +97,7 @@ for i in range(2, N + 1):
 {% endhighlight %}
 
 
-< memoization with recursion
+Memoization with recursion
 
 {% highlight python %}
 def get_number_of_terms(n, number_of_terms):
@@ -117,7 +119,7 @@ def get_number_of_terms(n, number_of_terms):
 N = 1000000
 number_of_terms = [0] * (N + 1)
 
-for i in range(1, N + 1):
+for i in range(1, len(number_of_terms)):
     get_number_of_terms(i, number_of_terms)
 {% endhighlight %}
 

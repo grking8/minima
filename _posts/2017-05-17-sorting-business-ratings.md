@@ -6,15 +6,11 @@ layout: post
 
 You have an array of businesses. Each business has an ID
 
-{% highlight bash %}
-n in {1..10000}
-{% endhighlight %}
+$$ n \in \left[1 \,.\,.\, 10000\right] $$
 
-and a rating in
+and a rating
 
-{% highlight bash %}
-{1..5}
-{% endhighlight %}
+$$  m \in \left[1 \,.\,.\, 5\right] $$
 
 In JavaScript, something like
                     
