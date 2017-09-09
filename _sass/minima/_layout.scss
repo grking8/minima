@@ -127,7 +127,7 @@
 }
 
 .footer-wrapper {
-  @include relative-font-size(0.9375);
+  @include relative-font-size(0.75);
   margin-right: auto;
   margin-left: auto;
   color: $grey-color;
