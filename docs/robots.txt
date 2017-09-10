@@ -1,3 +1,7 @@
+---
+layout: null
+sitemap: false
+---
 User-agent: *
-Sitemap: http://0.0.0.0:4000/sitemap.xml
+Sitemap: {{ site.url }}/sitemap.xml
 Disallow: /search/
