@@ -2,8 +2,6 @@
 
 Personal homepage / blog using the Jekyll theme [minima](https://jekyll.github.io/minima/).
 
-[Documentation](https://family-guy.github.io/blog/)
-
 ## Installation / build instructions
 
 ### Linux
@@ -34,6 +32,10 @@ config.vm.synced_folder "/path/to/host-machine/repo", "/path/to/guest-machine/re
 
 - Install Docker so that you can check locally the deployment process (hence the use of Vagrant, Docker being easier to run on Linux than Mac OS X).
 
+## Documentation
+
+Can be found [here.](https://family-guy.github.io/blog/)
+ 
 ## License
 
 Same as [minima](https://jekyll.github.io/minima/), i.e. [MIT](http://opensource.org/licenses/MIT).
