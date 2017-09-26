@@ -2,6 +2,8 @@
 
 Personal homepage / blog using the Jekyll theme [minima](https://jekyll.github.io/minima/).
 
+[Documentation](https://family-guy.github.io/blog/)
+
 ## Installation / build instructions
 
 ### Linux
