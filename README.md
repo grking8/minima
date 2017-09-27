@@ -24,7 +24,7 @@ jekyll serve`
 - Get the Vagrant box's IP address `grep -nrw 'ip' Vagrantfile`
 
 - Sync the newly-cloned git repositories on the guest and host machines by adding `
-config.vm.synced_folder "/path/to/host-machine/repo", "/path/to/guest-machine/repo", fsnotify: true` to `Vagrantfile`. This allows editing source files with your editor of choice on the host machine and for changes to take effect without restarting the server on a page refresh. If your editor of choice is Vim, Nano, etc. you can skip this step ;)
+config.vm.synced_folder "/path/to/host-machine/repo", "/path/to/guest-machine/repo", fsnotify: true` to `Vagrantfile`. This allows editing source files with your editor of choice on the host machine and for changes to take effect without restarting the server on a page refresh. If your editor of choice is Vim, Nano, etc. you can skip this step :wink:
 
 - Exit `ssh`, restart the Vagrant box `vagrant reload --provision <vagrantboxid>` and start a new session. 
 
