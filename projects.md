@@ -22,7 +22,7 @@ order: 3
 <br>
 <br>
 
-- # Easy German
+- # Easy German :de:
 
 
 
