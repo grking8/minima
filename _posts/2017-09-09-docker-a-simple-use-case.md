@@ -17,7 +17,7 @@ In this post, we are going to setup the simplest possible web application on a n
 
 **Step 1**
 
-Login to your new server. As the server is new, there is no web server software (Apache, Nginx, etc.) installed thus navigating to `http://myipaddress` returns an unable to connect error in the browser (even after opening up port 80).
+Login to your new server. As the server is new, there is no web server software (Apache, Nginx, etc.) installed thus navigating to `http://myipaddress` returns an `unable to connect error` in the browser (even after opening up port 80).
 
 **Step 2**
 
@@ -106,14 +106,14 @@ sudo docker image ls
 and
 
 {% highlight bash %}
-sudo docker image ls
+sudo docker container ls
 {% endhighlight %}
 
 return nothing.
 
 In OOP, we know that before we can create an object, we need to define a class. Similarly, before creating any containers, we need an image. Images are created via the Docker command `build`.
 
-Cd into the project root
+Go into the project root
 
 {% highlight bash %}
 cd ~/project-root  # adjust accordingly
