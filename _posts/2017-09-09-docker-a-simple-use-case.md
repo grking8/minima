@@ -11,7 +11,7 @@ This was fairly quick and straightforward. However, when deploying an actual web
 
 Further, what happens if one day you want to deploy your app on a different server? Will it work out-of-the-box? Do you remember all the steps to do the configuration, setup, etc.? Do you have the necessary tests ready to check the deployment went successfully? Even if all this is documented, you will have to follow each step carefully. **Upshot - all this can be time-consuming and stressful.**
 
-Enter [Docker]('https://www.docker.com/') to the rescue. Your whole app and everything required to run it is packaged neatly into a self-contained unit, a Docker *container* which is simply a Unix process. All you need to do is start it.
+Enter [Docker](https://www.docker.com/) to the rescue. Your whole app and everything required to run it is packaged neatly into a self-contained unit, a Docker *container* which is simply a Unix process. All you need to do is start it.
 
 In this post, we are going to setup the simplest possible web application on a new server using Docker. All the app does is serve up a single static HTML file, i.e. the app consists of just a homepage.
 

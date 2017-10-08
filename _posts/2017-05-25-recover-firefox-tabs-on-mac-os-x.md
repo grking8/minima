@@ -27,7 +27,7 @@ If you're not sure,
 echo $HOME
 {% endhighlight %}
 
-#### Step 1
+### Step 1
 
 Unhide files in Finder. 
 
@@ -37,7 +37,7 @@ defaults write com.apple.finder AppleShowAllFiles -bool true &amp;&amp; osascrip
 
 (restarts Finder).
 
-#### Step 2
+### Step 2
 
 Look in
 
@@ -53,7 +53,7 @@ recovery.bak
 recovery.js
 {% endhighlight %}
 
-#### Step 3
+### Step 3
 
 Find the current versions of the above files. They will probably be somewhere like
 
@@ -63,11 +63,11 @@ Find the current versions of the above files. They will probably be somewhere li
 
 Close Firefox.
 
-#### Step 4
+### Step 4
 
 Replace the current versions with their backups. If you reopen Firefox, "History->Restore Previous Session" still does not work.
 
-#### Step 5
+### Step 5
 
 {% highlight bash %}
 cd /home/Library/Application Support/Firefox/Profiles/vrjcwd35.default
@@ -87,7 +87,7 @@ sessionstore.old
 
 "History->Restore Previous Session" should now work. If your system does an hourly backup, for example, you will have lost at most one hour's worth of tabs.
 
-#### Step 6
+### Step 6
 
 Delete 
 
