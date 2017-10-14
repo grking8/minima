@@ -17,9 +17,9 @@ order: 4
   <li>Juggling multiple tickets</li>
   <li>Version control, adherence to developer workflow</li>
   <li>Testing, QA</li>
-  <li>Writing documentation</li>
-  <li>Daily stand-up, biweekly sprint planning meeting</li>
-  <li>Group chat (status updates, troubleshooting, discussion)</li>
+  <li>Documentation</li>
+  <li>Daily stand-up, biweekly sprint-planning meeting</li>
+  <li>Group chat (status updates, troubleshooting, technical discussion)</li>
   </ul> 
   Frontend
   <ul>
@@ -38,7 +38,7 @@ order: 4
 <details> 
   <summary>CTO & Co-founder, <a href="https://zorncapital.com/">Zorn Capital</a></summary>
   <br>
-  Solution architect; business strategy; technical research
+  Solution architect; business strategy; quantitative research
 </details>
 
 <br>
