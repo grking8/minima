@@ -65,4 +65,4 @@ order: 4
 :   Licence de mathématiques, [Université Montpellier 2](http://www.umontpellier.fr/)
 
 <br>
-[Full CV]({{ site.url }}/assets/pdfs/full_cv.pdf)
+[Full CV]({{ site.url }}/full_cv.pdf)
