@@ -22,6 +22,8 @@ permalink: /grades/
 | 2013 | L2 | Outils informatique | 14 | 20 | 70 | 154/332 | 2.5 |
 | 2013 | L2 | Arithmetique de Z et corps fini | 12.75 | 20 | 64 | 8/50 | 5 |
 | 2013 | L2 | Analyse 4 | 13 | 20 | 65 | 15/72 | 5 |
+| 2013 | L2 | Algèbre linéaire 4 | 15.9 | 20 | 79.5 | 6/93 | 5 |
+| 2013 | L2 | Mathématiques en mécanique | 10.5 | 20 | 52.5 | 4/14 | 5 |
 | 2013 | L2 | Probabilités | 18 | 20 | 90 | 2/31 | 5 |
 | 2013 | L2 | Analyse numérique matricielle | 18.5 | 20 | 93 | 2/20 | 5 |
 | 2012 | L1 | Programmation impérative | 19 | 20 | 95 | 15/454 | 5 |
