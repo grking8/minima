@@ -56,10 +56,12 @@ order: 4
   Backend
   <ul>
   <li>Extract-transform-load data (PHP, MySQL)</li>
-  <li>API integrations (online advertising - Google, Facebook, Microsoft, Response Tap)</li>
+  <li>API integrations (advertising - Google, Facebook, Microsoft, Response Tap)</li>
   </ul>
 </details>
 
 <br>
 **2011 -- 2014**
 :   Licence de mathématiques, [Université Montpellier 2](http://www.umontpellier.fr/)
+
+[Full CV]({{ site.url }}/assets/pdfs/full_cv.pdf)
