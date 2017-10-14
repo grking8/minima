@@ -38,6 +38,15 @@ ul, ol, dl, figure,
 }
 
 
+.mbtablestyle {
+        border-collapse: collapse;
+   > table, td, th {
+        border: 1px solid black;
+        padding: 10px;
+  }
+}
+
+
 
 /**
  * Images
