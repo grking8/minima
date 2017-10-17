@@ -38,7 +38,7 @@ order: 4
 <details> 
   <summary>CTO & Co-founder, <a href="https://zorncapital.com/">Zorn Capital</a></summary>
   <br>
-  Solution architect; business strategy; quantitative research
+  Solution architecture; business strategy; quantitative research
 </details>
 
 <br>
