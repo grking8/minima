@@ -53,3 +53,6 @@ permalink: /grades/
 | 2002 | A-level  | Economics             | A | A | 96 |
 | 2001 | AS-level | Government & Politics | A | A | 93 |
 {:.mbtablestyle}
+<br>
+<br>
+<a href="#top">Back to top</a>
