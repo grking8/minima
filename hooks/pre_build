@@ -1,5 +1,5 @@
 #!/bin/bash
 echo "=> Build the site using jekyll"  
 mkdir -p _site  
-sudo chown -R $(whoami):$(whoami) /srv/jekyll
-sudo docker run --volume=$(pwd):/srv/jekyll jekyll/jekyll jekyll build
+chown -R $(whoami):$(whoami) /srv/jekyll
+docker run --volume=$(pwd):/srv/jekyll jekyll/jekyll jekyll build
