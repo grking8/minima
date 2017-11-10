@@ -20,9 +20,8 @@ order: 3
     - Google Compute Engine
 
 <br>
-<br>
 
 - # Easy German :de:
+    [Source](https://github.com/family-guy/easy-german) (Python)
 
-
-
+    [Documentation](https://family-guy.github.io/easy-german/)
