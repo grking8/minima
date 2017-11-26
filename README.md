@@ -8,8 +8,18 @@ Personal homepage / blog using the Jekyll theme [minima](https://jekyll.github.i
 
 - Clone the git repository.
 
-- Install Jekyll. From the project root, `
-jekyll serve`
+- Install Jekyll, e.g. on Ubuntu (as superuser)
+    * `apt-get update`
+    * `apt-get upgrade`
+    * `apt-get install ruby-full`
+    * `gem install jekyll`. Check `jekyll --version`. If error:
+    * `gem install bundler`
+    * `apt-get install zlib1g-dev`
+    * `gem install nokogiri -v '1.8.1'`
+    * `bundle install`
+    * `jekyll --version`
+
+- From the project root, `jekyll serve`
 
 - Go to `localhost:4000` in the browser
 
