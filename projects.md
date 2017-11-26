@@ -24,7 +24,7 @@ order: 3
 - # Easy German :de:
     [Source](https://github.com/family-guy/easy-german) (Python)
 
-    [Documentation](https://readthedocs.org/)
+    [Documentation](http://easygerman.readthedocs.io/en/latest/)
 
     [Wiki](https://family-guy.github.io/easy-german-wiki/)
 
