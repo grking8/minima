@@ -26,5 +26,7 @@ theme: minima
 exclude:
   - Gemfile
   - Gemfile.lock
+url: "https://guyrking.com"
 plugins:
   - jemoji
+  - jekyll-sitemap
