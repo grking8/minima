@@ -30,3 +30,4 @@ url: "https://guyrking.com"
 plugins:
   - jemoji
   - jekyll-sitemap
+google_analytics: "UA-110244866-1"
