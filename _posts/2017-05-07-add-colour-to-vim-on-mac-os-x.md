@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Add Colour To Vim On Mac OS X
+author: guy
 ---
 
 {% include post-image.html name="vim.png" width="50" height="40" alt="Vim logo" %}

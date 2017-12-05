@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Deploy Your Web App To A Server - Part 2
+author: guy
 ---
 
 {% include post-image.html name="1280px-Wikimedia_Foundation_Servers-8055_17.jpeg" width="150" height="75" alt="Docker logo" %}

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Recover Firefox Tabs On Mac OS X
+author: guy
 ---
 
 {% include post-image.html name="firefox.png" width="50" height="50" alt="Firefox logo" %}
