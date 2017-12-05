@@ -2,6 +2,7 @@
 layout: post
 title: Deploy Your Web App To A Server - Part 2
 author: guy
+comments: true
 ---
 
 {% include post-image.html name="1280px-Wikimedia_Foundation_Servers-8055_17.jpeg" width="150" height="75" alt="Docker logo" %}
@@ -80,3 +81,6 @@ You might also want to consider `rsync` if you have lots of files to transfer
 {% highlight bash %}
 rsync -rh --progress -e 'ssh -i <pathtokey>;' <pathtodirectory> <user>@<server>:<path>
 {% endhighlight %}
+
+{% include disqus_comments.html %}
+                 
