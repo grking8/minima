@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Docker - A Simple Use Case
-author: guy
+author: familyguy
+comments: true
 ---
 
 {% include post-image.html name="Whale Logo332_5.png" width="75" height="50" alt="Docker logo" %}

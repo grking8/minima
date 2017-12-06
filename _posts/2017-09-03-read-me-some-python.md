@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Read Me Some Python
-author: guy
+author: familyguy
+comments: true
 ---
 
 {% include post-image.html name="python-logo.png" width="75" height="50" alt="Python logo" %}

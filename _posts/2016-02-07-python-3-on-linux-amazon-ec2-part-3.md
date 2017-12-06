@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Python 3 On Linux Amazon EC2 - Part 3
-author: guy
+author: familyguy
+comments: true
 ---
 
 {% include post-image.html name="AWS_Simple_Icons_AWS_Cloud.png" width="100" height="100" alt="Amazon Web Services logo" %}

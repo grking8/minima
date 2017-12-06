@@ -1,7 +1,8 @@
 ---
 layout: post
 title: The Python Interpreter and Importing Modules
-author: guy
+author: familyguy
+comments: true
 ---
 
 {% include post-image.html name="python-logo.png" width="75" height="50" alt="Python logo" %}

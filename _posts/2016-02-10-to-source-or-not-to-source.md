@@ -1,7 +1,8 @@
 ---
 layout: post
 title: To Source Or Not To Source
-author: guy
+author: familyguy
+comments: true
 ---
 
 {% include post-image.html name="761100-960x720-preiselbeer-meerrettich-dip.jpeg" width="100" height="70" alt="Various sauces" %}

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Sorting Business Ratings
-author: guy
+author: familyguy
+comments: true
 ---
 
 {% include post-image.html name="4347962723_ffdd4df93d.jpeg" width="100" height="50" alt="Five stars" %}

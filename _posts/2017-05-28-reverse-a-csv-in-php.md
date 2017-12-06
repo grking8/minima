@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Reverse A CSV In PHP
-author: guy
+author: familyguy
+comments: true
 ---
 
 {% include post-image.html name="PHP_Logo.png" width="60" height="30" alt="PHP logo" %}

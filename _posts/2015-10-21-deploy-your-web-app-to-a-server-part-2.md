@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Deploy Your Web App To A Server - Part 2
-author: guy
+author: familyguy
 comments: true
 ---
 
@@ -81,6 +81,4 @@ You might also want to consider `rsync` if you have lots of files to transfer
 {% highlight bash %}
 rsync -rh --progress -e 'ssh -i <pathtokey>;' <pathtodirectory> <user>@<server>:<path>
 {% endhighlight %}
-
-{% include disqus_comments.html %}
                  
