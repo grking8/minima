@@ -5,9 +5,9 @@ author: familyguy
 comments: true
 ---
 
-{% include post-image.html name="apple-36282_640.png" width="80%" height="100%" alt="rotten apple" %}
+{% include post-image.html name="apple-36282_640.png" width="50" height="50" alt="rotten apple" %}
 
-The American mathematician (John Nash)[https://en.wikipedia.org/wiki/John_Forbes_Nash_Jr] received the following recommendation from one of his university professors: 
+The American mathematician [John Nash](https://en.wikipedia.org/wiki/John_Forbes_Nash_Jr) received the following recommendation from one of his university professors: 
 
 > This man is a genius.
 

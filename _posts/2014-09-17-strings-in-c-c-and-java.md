@@ -5,7 +5,7 @@ author: familyguy
 comments: true
 ---
 
-{% include post-image.html name="scrabble-148970_640.png" width="95" height="100" alt="Scrabble tiles" %}
+{% include post-image.html name="scrabble-148970_640.png" width="90" height="60" alt="Scrabble tiles" %}
 
 There are a few noteworthy differences between Java and C++ strings (C strings will be less mentioned as they are quite outdated and more awkward to manipulate).
 

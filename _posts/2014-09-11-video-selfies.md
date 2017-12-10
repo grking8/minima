@@ -5,7 +5,7 @@ author: familyguy
 comments: true
 ---
 
-{% include post-image.html name="13970528122_dafd4f38ab_b.jpeg" width="100" height="100" alt="Scrabble tiles" %}
+{% include post-image.html name="13970528122_dafd4f38ab_b.jpeg" width="150" height="75" alt="video selfie" %}
 
 Does anyone like going to job interviews?
 
