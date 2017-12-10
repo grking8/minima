@@ -181,7 +181,7 @@ Take the example of arrays, which in Java are considered as objects. If a functi
 
 One of the advantages of pass by reference is that computing time and space are not wasted by pointless copying of variables.
 
-If the variable is of a primitive type then this is not an issue. However, if it is, for example, a large array then copying that array can be costly. This is something I discovered when writing Java and C++ solutions to [Problem 29 of Project Euler.]("https://projecteuler.net/problem=29")
+If the variable is of a primitive type then this is not an issue. However, if it is, for example, a large array then copying that array can be costly. This is something I discovered when writing Java and C++ solutions to [Problem 29 of Project Euler.](https://projecteuler.net/problem=29)
 
 The Java solution took around 2 seconds whereas in C++ the implementation of the same solution did not return anything after a minute.
 

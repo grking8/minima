@@ -24,7 +24,7 @@ The two main advantages of developing your app locally before deploying it to a 
 
 To make things concrete, suppose you've been working locally on your computer using MAMP (Mac OS X, Apache, MySQL and PHP). Let's ignore MySQL and PHP here and focus instead on the other bits.
 
-Every web app needs a server to work. The word 'server' is an example of a [metonymy.]("https://en.wikipedia.org/wiki/Metonymy") It refers to the computer storing the app's source files **and** the software on that computer serving those files to users' browsers (boy, was this a source of confusion for me in the beginning).
+Every web app needs a server to work. The word 'server' is an example of a [metonymy.](https://en.wikipedia.org/wiki/Metonymy) It refers to the computer storing the app's source files **and** the software on that computer serving those files to users' browsers (boy, was this a source of confusion for me in the beginning).
 
 You may have heard of other web development stacks, e.g. LAMP, WAMP, MEAN. Typically, the name contains four parts, referencing:
 
@@ -70,7 +70,7 @@ Continuing with our MAMP example, when you type into your browser `http://localh
 
 If instead you typed in your browser `http://google.com` a HTTP request would be attempted to be sent over the Internet to a Google server and a response sent back (again, over the Internet).
 
-We would like to host our app on a server so that anyone online can use it. Given that we have already been using `localhost` to test our app in local development, one solution is to simply use our own computer as a server. As long as our computer is online, Apache can serve responses just as it did before (the difference being now requests do not only come from our own computer, but the whole world). Our computer just needs to [have its ports opened up]("https://managewp.com/how-to-access-a-local-website-from-internet-with-port-forwarding") so clients with any IP address can have their HTTP requests responded to.
+We would like to host our app on a server so that anyone online can use it. Given that we have already been using `localhost` to test our app in local development, one solution is to simply use our own computer as a server. As long as our computer is online, Apache can serve responses just as it did before (the difference being now requests do not only come from our own computer, but the whole world). Our computer just needs to [have its ports opened up](https://managewp.com/how-to-access-a-local-website-from-internet-with-port-forwarding) so clients with any IP address can have their HTTP requests responded to.
 
 Although this is a possible solution, it is not a very good one as
 
@@ -86,7 +86,7 @@ In the past, one could purchase dedicated server hardware and assure power suppl
 
 Today there exist a number of alternatives.
 
-In Part 2, we will see how to use [Amazon EC2]("https://aws.amazon.com/ec2/") to get your app online for free for one year. This is part of Amazon's web services offering and sometimes referred to as Infrastructure as a Service (IaaS). This is different to something such as [Heroku]("https://www.heroku.com/") which is Platform as a Service (PaaS).
+In Part 2, we will see how to use [Amazon EC2](https://aws.amazon.com/ec2/) to get your app online for free for one year. This is part of Amazon's web services offering and sometimes referred to as Infrastructure as a Service (IaaS). This is different to something such as [Heroku](https://www.heroku.com/) which is Platform as a Service (PaaS).
 
 Although both achieve the same goal of deploying a web app, PaaS is quicker and easier to implement whereas IaaS is more flexibile and manual.
 
