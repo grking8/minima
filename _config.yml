@@ -31,8 +31,6 @@ plugins:
   - jemoji
   - jekyll-sitemap
   - jekyll-feed
-
 google_analytics: "UA-110244866-1"
-
 disqus:
   shortname: homepage-5
