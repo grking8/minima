@@ -5,7 +5,7 @@ author: familyguy
 comments: true
 ---
 
-{% include post-image.html name="1280px-Wikimedia_Foundation_Servers-8055_17.jpeg" width="150" height="75" alt="Docker logo" %}
+{% include post-image.html name="1280px-Wikimedia_Foundation_Servers-8055_17.jpeg" width="150" height="75" alt="rack server" %}
 
 In Part 1, we gave some background information.
 
