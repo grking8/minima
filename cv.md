@@ -5,7 +5,9 @@ permalink: /cv/
 order: 4
 ---
 
-**2017 --**
+# Summary
+
+*2017 --*
 <details> 
   <summary>Developer, <a href="https://lambertlabs.com/">Lambert Labs</a></summary>
   <br>
@@ -34,7 +36,7 @@ order: 4
 </details>
 
 <br>
-**2016 --**
+*2016 --*
 <details> 
   <summary>CTO & Co-founder, <a href="https://zorncapital.com/">Zorn Capital</a></summary>
   <br>
@@ -48,7 +50,7 @@ order: 4
 </details>
 
 <br>
-**2014 -- 2015**
+*2014 -- 2015*
 <details> 
   <summary>Account Technologist, <a href="http://www.brainlabsdigital.com/">Brainlabs Digital</a></summary>
   <br>
@@ -64,7 +66,7 @@ order: 4
 </details>
 
 <br>
-**2011 -- 2014**
+*2011 -- 2014*
 :   Licence de mathématiques, [Université Montpellier 2](http://www.umontpellier.fr/)
 
 <br>
