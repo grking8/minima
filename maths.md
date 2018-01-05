@@ -21,13 +21,13 @@ Cette page s'est fortement inspirée [de ce document.](http://depmath-nancy.univ
 1.2 [Calculs algébriques](#calculs-algebriques)
 
 1.2.1 [Le symbole $\sum$](#le-symbole-sum)
-1.2.2 [Sommes telescopiques](#sommes-telescopiques)
+1.2.2 [Sommes téléscopiques](#sommes-telescopiques)
 1.2.3 [Le symbole $\prod$](#le-symbole-prod)
 1.2.4 [Factorielle d'un entier naturel](#factorielle-dun-entier-naturel)
 
-1.3 [Trigonometrie et nombres complexes](#trigonometrie-et-nombres-complexes)
+1.3 [Trigonométrie et nombres complexes](#trigonometrie-et-nombres-complexes)
 
-1.3.1 [Trigonometrie](#trigonometrie)
+1.3.1 [Trigonométrie](#trigonometrie)
 1.3.2 [Introduction aux nombres complexes](#introduction-aux-nombres-complexes)
 <br><br>
 
@@ -91,13 +91,13 @@ Conclure
 Supposons que $\sqrt{2}$ est rationnel
 <br>
 $\sqrt{2} = \frac{p}{q}$ avec $p,q$ dans $\mathbb{N}^*$, $\frac{p}{q}$
-irreductible
+irréductible
 <br>
 $p^2$ est pair
 <br>
 Par l'absurde, $p$ est pair
 <br>
-De meme, $q$ est pair
+De même, $q$ est pair
 <br>
 Conclure
 </details>
@@ -108,7 +108,7 @@ Conclure
 - $Soit \; f \; une \; fonction \; de \; \mathbb{R} \; dans \; \mathbb{R}. \;
 Montrer \; qu'il \; existe \; un \; unique \; couple \; (p, i) \; de$
 
-$fonctions \; de \; \mathbb{R} \; dans \; \mathbb{R} \; verifiant \; les \;
+$fonctions \; de \; \mathbb{R} \; dans \; \mathbb{R} \; vérifiant \; les \;
 conditions \; suivantes:$
 
 $i\) \; p \; est \; paire, \; i \; est \; impaire;$
@@ -123,18 +123,18 @@ Supposons que $f=p+i$ avec $p$ paire, $i$ impaire
 <br>
 $p(x)=\frac{f(x)+f(-x)}{2}$
 <br>
-De meme $i(x)=\frac{f(x)-f(-x)}{2}$
+De même $i(x)=\frac{f(x)-f(-x)}{2}$
 <br>
-Donc si un tel couple $(p,i)$ existait, il serait necessairement de la forme
+Donc si un tel couple $(p,i)$ existait, il serait nécessairement de la forme
 <br>
 $\left(
 p:\mathbb{R}\rightarrow\mathbb{R},x \mapsto \frac{f(x)+f(-x)}{2},
 i:\mathbb{R}\rightarrow\mathbb{R},x \mapsto \frac{f(x)-f(-x)}{2}
 \right)$
 <br>
-Synthese
+Synthèse
 <br>
-Verifier $p$ est paire, $i$ est impaire, et $f=p+i$
+Vérifier $p$ est paire, $i$ est impaire, et $f=p+i$
 </details>
 <br>
 
@@ -145,7 +145,7 @@ Au lieu de montrer $A \implies B$, montrer $non(B) \implies non(A)$
 <br>
 <br>
 
-### Calculs algebriques
+### Calculs algébriques
 
 #### Le symbole $\sum$
 
@@ -158,7 +158,7 @@ $des \; n \; premiers \;entiers \; impairs.$
 
 <details>
 <summary></summary>
-Par linearite de la somme,
+Par linéarité de la somme,
 <br>
 $\sum_{k=1}^n(2k-1)=2\sum_{k=1}^n k-\sum_{k=1}^n1$
 </details>
@@ -168,7 +168,7 @@ $\sum_{k=1}^n(2k-1)=2\sum_{k=1}^n k-\sum_{k=1}^n1$
  
 $$u_n = \sum_{k=n}^{2n}\frac{1}{k}$$
 
-$Simplifier \; u_{n+1}-u_n \; et \; en \; deduire \; la \; monotonie \; 
+$Simplifier \; u_{n+1}-u_n \; et \; en \; déduire \; la \; monotonie \; 
 de \; (u_n)_{n \geq 1}$.
 
 <details>
@@ -181,17 +181,17 @@ $u_{n+1}-u_n=\frac{1}{2n+1} + \frac{1}{2n+2} - \frac{1}{n}$
 
 $$\; \sum_{k=1}^{n-1}H_k = nH_n - n$$
 
-$ou \; H_n \; est \; la \; n-ieme \; nombre \; harmonique$
+$ou \; H_n \; est \; la \; n-ième \; nombre \; harmonique$
 
 $$H_n = \sum_{k=1}^n \frac{1}{k}$$
 
 <details>
 <summary></summary>
-Par recurrence simple
+Par récurrence simple
 </details>
 <br>
 
-#### Sommes telescopiques
+#### Sommes téléscopiques
 
 Supposons qu'on veut calculer 
 
@@ -232,12 +232,12 @@ $\ln\left(1-\frac{1}{k^2}\right)=(\ln(k+1)-\ln(k))-(\ln(k)-\ln(k-1))$
 </details>
 <br>
 
-- $Determiner \; trois \; reels \; a, b, c \; tels \; que:$
+- $Déterminer \; trois \; reels \; a, b, c \; tels \; que:$
 
 $$\forall x \in \mathbb{R} \setminus \{0,-1,-2\}, \quad 
 \frac{1}{x(x+1)(x+2)}=\frac{a}{x}+\frac{b}{x+1}+\frac{c}{x+2}$$
 
-$En \; deduire, \; pour \; n \; dans \; \mathbb{N}^*, \; une \; expression \;
+$En \; déduire, \; pour \; n \; dans \; \mathbb{N}^*, \; une \; expression \;
 simple \; de:$
 
 $$U_n=\sum_{k=1}^n \frac{1}{k(k+1)(k+2)}$$
@@ -264,9 +264,9 @@ a+b+c=0 \\
 $$
 Donc $(a,b,c)=(\frac{1}{2},-1,\frac{1}{2})$
 <br>
-Synthese
+Synthèse
 <br>
-Verifier que $\frac{1}{x(x+1)(x+2)}=\frac{1}{2x}-\frac{1}{x+1}+\frac{1}{2x+4}$
+Vérifier que $\frac{1}{x(x+1)(x+2)}=\frac{1}{2x}-\frac{1}{x+1}+\frac{1}{2x+4}$
 <br>
 $U_n=\frac{1}{2}\left(\sum_{k=1}^n\left(\frac{1}{k+2}-
 \frac{1}{k+1}\right)-\sum_{k=1}^n\left(\frac{1}{k+1}-
@@ -317,15 +317,15 @@ $m+1 \leq \lceil n/2 \rceil$
 <br>
 $n-m \geq n+1-\lceil n/2 \rceil$
 <br>
-Verifier que $n+1-\lceil n/2 \rceil \geq \lceil n/2 \rceil$
+Vérifier que $n+1-\lceil n/2 \rceil \geq \lceil n/2 \rceil$
 <br>
 Conclure
 </details>
 <br>
 
-### Trigonometrie et nombres complexes
+### Trigonométrie et nombres complexes
 
-#### Trigonometrie
+#### Trigonométrie
 
 Les valeurs des cosinus et sinus des angles "usuels", e.g. $(\cos(0), \sin(0))=P(0)=(1,0)$:
 
@@ -358,7 +358,7 @@ $$\sin(x)=\sin(y) \iff x \equiv y \pmod{2\pi} \; \mathrm{ou}
 \; x \equiv \pi-y \pmod{2\pi} \tag{6}$$
 
 $\[Soit \; a \; dans \; \mathbb{R}^*, \; (x,y) \; dans \; \mathbb{R^2}. \;
-On \; ecrit:$
+On \; écrit:$
 
 $$x \equiv y \pmod{a}$$
 
@@ -381,7 +381,7 @@ $\lvert \cos(x) \rvert = \sqrt{\frac{\cos(2x)+1}{2}}$
 </details>
 <br>
 
-- $Determiner \; sans \; calcul \; le \; maximum \; sur \; \mathbb{R} \; de:$
+- $Déterminer \; sans \; calcul \; le \; maximum \; sur \; \mathbb{R} \; de:$
 
 $$x \mapsto \sin(x)\cos(x) $$
 
@@ -397,7 +397,7 @@ Posons $x=\frac{\pi}{4}$
 </details>
 <br>
 
-- $a) \; Soit \; x \; un \; nombre \; reel \; non \; multiple \; entier \; 
+- $a) \; Soit \; x \; un \; nombre \; réel \; non \; multiple \; entier \; 
 de \; \pi. \; Simplifier, \; pour \; n \; dans \; \mathbb{N}^*, \; le \; 
 produit:$
 
@@ -411,7 +411,7 @@ $(ce \; que \; l'on \; admet) \; et \; en \; l'appliquant \; a \; u=\frac{x}
 {2^n} \; qui \; tend \; vers \; 0 \; lorsque \; n \; tend \; vers \; +
 \infty,$
 
-$determiner \; la \; limite \; de \; P_n(x) \; lorsque \; n \; tend
+$déterminer \; la \; limite \; de \; P_n(x) \; lorsque \; n \; tend
 \; vers \; +\infty.$
 
 $b) \; Pour \; n \; dans \; \mathbb{N}^*, \; soit:$
@@ -440,13 +440,13 @@ $\cos(y)=\frac{\sin(2y)}{2\sin(y)}$
 <br>
 $P_n(x)=\frac{\sin(x)}{2^n \sin\left(\frac{x}{2^n}\right)}$
 <br>
-b) Par recurrence simple, $\cos(2x)=2\cos^2(x)-1$
+b) Par récurrence simple, $\cos(2x)=2\cos^2(x)-1$
 <br>
 c) Utiliser a), b)
 </details>
 <br>
 
-- $Resoudre \; dans \; \mathbb{R} \; les \; equations:$
+- $Résoudre \; dans \; \mathbb{R} \; les \; équations:$
 
 $$a) \; \cos(x)=\frac{1}{2}, \quad b) \; \sin(2x)=\frac{\sqrt{2}}{2}$$
 
@@ -458,7 +458,7 @@ b) $\sin\left(\frac{\pi}{4}\right)=\frac{\sqrt{2}}{2}$, (6)
 </details>
 <br>
 
-- $Soient \; a \; et \; b \; deux \; reels \; non \; tous \; nulls.$
+- $Soient \; a \; et \; b \; deux \; réels \; non \; tous \; nulls.$
 
 $a) \; Montrer \; que \; le \; point \;
 \left(\frac{a}{\sqrt{a^2+b^2}},\frac{b}{\sqrt{a^2+b^2}}\right) \;
@@ -468,14 +468,14 @@ $du \; plan. \; Il \; existe \; donc \; \phi \; dans \; \mathbb{R} \; tel \;
 que \; \left(\frac{a}{\sqrt{a^2+b^2}},\frac{b}{\sqrt{a^2+b^2}}\right)
 =(\cos(\phi),\sin(\phi)).$
 
-$b) \; Verifier:$
+$b) \; Vérifier:$
 
 $$\forall x \in \mathbb{R}, \; a\cos(x)+b\sin(x)=\sqrt{a^2+b^2}\cos(x-\phi)$$
 
 $Quel \; est \; le \; maximum \; de \; a\cos(x)+b\sin(x) \; lorsque \; x \;
-decrit \; \mathbb{R}?$
+décrit \; \mathbb{R}?$
 
-$c) \; Appliquer \; ce \; qui \; precede \; pour \; resoudre:$
+$c) \; Appliquer \; ce \; qui \; précède \; pour \; résoudre:$
 
 $$\cos(x)+\sin(x)=\sqrt{\frac{3}{2}}$$
 
@@ -494,7 +494,7 @@ $\cos(\frac{\pi}{6})=\frac{\sqrt{3}}{2}$
 </details>
 <br>
 
-- $Sous \; des \; hypotheses \; convenables, \; exprimer \; \tan(x+y) \; en
+- $Sous \; des \; hypothèses \; convenables, \; exprimer \; \tan(x+y) \; en
 \; fonction \; de \; \tan(x) \; et \; \tan(y).$
 
 <details>
@@ -507,15 +507,15 @@ De plus, supposons que
 $x \not\equiv \frac{\pi}{2} \pmod \pi$,
 $y \not\equiv \frac{\pi}{2} \pmod \pi$
 <br>
-Donc $\tan(x),\tan(y)$ bien definies
+Donc $\tan(x),\tan(y)$ bien définies
 <br>
-Considerer $\frac{\cos(x+y)}{\cos(x)\cos(y)}$ et
+Considérer $\frac{\cos(x+y)}{\cos(x)\cos(y)}$ et
 $\frac{\sin(x+y)}{\cos(x)\cos(y)}$
 </details>
 <br>
 
 - $Soient \; x \; dans \; \mathbb{R} \; non \; congru \; a \; \pi \; modulo \; 
-2\pi, \; t=\tan\left(\frac{x}{2}\right). Verifier$
+2\pi, \; t=\tan\left(\frac{x}{2}\right). Vérifier$
 
 $$\cos(x)=\frac{1-t^2}{1+t^2}, \quad \sin(x)=\frac{2t}{1+t^2}$$
 
