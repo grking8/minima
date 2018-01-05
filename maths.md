@@ -524,3 +524,7 @@ $$\cos(x)=\frac{1-t^2}{1+t^2}, \quad \sin(x)=\frac{2t}{1+t^2}$$
 Par $(0),(1),(2)$
 </details>
 <br>
+<br>
+<br>
+<br>
+ <a href="#top">Back to top</a>
