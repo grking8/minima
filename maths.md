@@ -8,26 +8,26 @@ order: 4
 Cette page s'est fortement inspirée [de ce document.](http://depmath-nancy.univ-lorraine.fr/club/docs/entreTerminaleEtCPGE.pdf)
 <br><br>
 
-1 [PRELIMINAIRES](#preliminaires)
+1 [PRELIMINAIRES](#préliminaires)
 
 1.1 [Modes de raisonnement](#modes-de-raisonnement)
 
-1.1.1 [Déduction](#deduction)
-1.1.2 [Récurrence](#recurrence)
+1.1.1 [Déduction](#déduction)
+1.1.2 [Récurrence](#récurrence)
 1.1.3 [Par l'absurde](#par-labsurde)
-1.1.4 [Analyse-synthèse](#analyse-synthese)
-1.1.5 [Contraposée](#contraposee)
+1.1.4 [Analyse-synthèse](#analyse-synthèse)
+1.1.5 [Contraposée](#contraposée)
 
-1.2 [Calculs algébriques](#calculs-algebriques)
+1.2 [Calculs algébriques](#calculs-algébriques)
 
 1.2.1 [Le symbole $\sum$](#le-symbole-sum)
-1.2.2 [Sommes téléscopiques](#sommes-telescopiques)
+1.2.2 [Sommes téléscopiques](#sommes-téléscopiques)
 1.2.3 [Le symbole $\prod$](#le-symbole-prod)
 1.2.4 [Factorielle d'un entier naturel](#factorielle-dun-entier-naturel)
 
-1.3 [Trigonométrie et nombres complexes](#trigonometrie-et-nombres-complexes)
+1.3 [Trigonométrie et nombres complexes](#trigonométrie-et-nombres-complexes)
 
-1.3.1 [Trigonométrie](#trigonometrie)
+1.3.1 [Trigonométrie](#trigonométrie)
 1.3.2 [Introduction aux nombres complexes](#introduction-aux-nombres-complexes)
 <br><br>
 
