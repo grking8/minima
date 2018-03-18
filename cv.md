@@ -11,9 +11,9 @@ order: 5
 <details> 
   <summary>Developer, <a href="https://lambertlabs.com/">Lambert Labs</a></summary>
   <br>
-  Proven team member
+  Established team member
   <ul>
-  <li>Implement bug fixes, features</li>
+  <li>Implement bug fixes, features; refactoring</li>
   <li>POCs</li>
   <li>Mix of independent, collaborative work (pair programming, code review)</li>
   <li>Juggling multiple tickets</li>
