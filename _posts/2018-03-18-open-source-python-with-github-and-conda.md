@@ -6,7 +6,7 @@ comments: true
 ---
 
 {% include post-image.html name="github.png" width="120" height="80" 
-alt="Conda logo" %}
+alt="Github logo" %}
 
 When new to contributing to open source projects, half the problem can be 
 just knowing where to start.
