@@ -9,7 +9,7 @@ comments: true
 the Docs logo" %}
 
 This post is aimed at those developing Python packages who would like to use
- Read the Docs for adding documentation to their code.
+ [Read the Docs](https://readthedocs.org/) for their documentation.
  
 ### Getting it to run locally
  
@@ -63,14 +63,13 @@ e.g.
 which should display a welcome message
 - In Github, under ***settings->webhooks*** you should see something from RTD
 - Commit your changes, push up and merge / wait to be merged your new 
-branch into master; this should kick off a build on the RTD server
-- In RTD, check the status of the build under ***project-name->builds***
-- Check the status of your build
+branch into master; this should kick off a build in RTD
+- Check the status of the build under ***project-name->builds***
 - Check the RTD URL
 
 ### Troubleshooting
 
-Even if your build succeeds, the RTD URL may not show any of your docstrings
+Even if a build succeeds, in RTD you may not see your docstrings
  / have 404s. 
 
 In RTD, under ***project-name->builds->build***, expand the log messages 
