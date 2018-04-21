@@ -6,8 +6,6 @@ jobs:
       - image: jekyll/jekyll:3.5.0
     steps:
       - checkout
-      - setup_remote_docker
-      - run: cd /srv/jekyll
       - run: mkdir -p _site
       - run: jekyll build
 
