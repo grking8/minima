@@ -4,6 +4,7 @@ jobs:
   build:
     docker:
       - image: jekyll/jekyll:3.5.0
+    working_directory: /srv/jekyll
     steps:
       - checkout
       - run: echo $(whoami)
