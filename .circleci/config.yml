@@ -6,7 +6,7 @@ jobs:
       - image: jekyll/jekyll:3.5.0
     steps:
       - checkout
-      - run jekyll --version
+      - run: jekyll --version
 
 workflows:
   version: 2
