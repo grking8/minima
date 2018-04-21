@@ -3,12 +3,12 @@ jobs:
 
   build:
     docker:
-      - image: ruby:slim
-      - image: jekyll/jekyll:3.5.0
+      - image: scratch
     steps:
       - checkout
+      - setup_remote_docker
       - run: mkdir -p _site
-      - run: jekyll build
+      - run: docker run --volume=$(pwd):/srv/jekyll --env JEKYLL_ENV=production jekyll/jekyll:3.5.0 jekyll build
 
 workflows:
   version: 2
