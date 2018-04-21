@@ -8,6 +8,7 @@ jobs:
     steps:
       - checkout
       - setup_remote_docker
+      - run: WORKDIR /srv/jekyll
       - run: mkdir -p _site
       - run: jekyll build
 
