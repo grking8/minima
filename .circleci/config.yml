@@ -3,6 +3,7 @@ jobs:
 
   build:
     docker:
+      - image: ruby:slim
       - image: jekyll/jekyll:3.5.0
     steps:
       - checkout
