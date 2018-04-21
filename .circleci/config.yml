@@ -8,6 +8,7 @@ jobs:
       - checkout
       - run: echo $(whoami)
       - run: echo $(pwd)
+      - run: echo $(which jekyll)
       - run: jekyll --version
 
 workflows:
