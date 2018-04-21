@@ -4,7 +4,6 @@ jobs:
   build:
     docker:
       - image: jekyll/jekyll:3.5.0
-    working_directory: ~/repo
     steps:
       - checkout
       - setup_remote_docker
