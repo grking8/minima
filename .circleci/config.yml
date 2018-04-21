@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run: echo $(whoami)
       - run: echo $(pwd)
-      - run: sudo jekyll --version
+      - run: jekyll --version
 
 workflows:
   version: 2
