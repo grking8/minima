@@ -31,8 +31,8 @@ jobs:
       - run:
           name: Authenticate google cloud
           command: |
-            echo "$GCLOUD_SERVICE_KEY" | base64 --decode --ignore-garbage > ${HOME}/gcloud-service-key.json && \
-            gcloud auth activate-service-account --key-file=${HOME}/gcloud-service-key.json && \
+            echo "$GCLOUD_SERVICE_KEY" | base64 --decode --ignore-garbage > $HOME/gcloud-service-key.json && \
+            gcloud auth activate-service-account --key-file=$HOME/gcloud-service-key.json && \
             gcloud config set project homepage-201807 && \
             gcloud config set compute/zone us-central1-a && \
             gcloud auth configure-docker
@@ -43,11 +43,32 @@ jobs:
           name: Push docker image
           command: docker push "gcr.io/homepage-201807/blah:$CIRCLE_SHA1"
 
+  deploy-production:
+    docker:
+      - image: google/cloud-sdk:latest
+    steps:
+      - run:
+          name: Authenticate google cloud
+          command: |
+            echo "$GCLOUD_SERVICE_KEY" | base64 --decode --ignore-garbage > ${HOME}/gcloud-service-key.json && \
+            gcloud auth activate-service-account --key-file=${HOME}/gcloud-service-key.json && \
+            gcloud config set project homepage-201807 && \
+            gcloud config set compute/zone us-central1-a && \
+            gcloud auth configure-docker
+      - run:
+          name: Create kubernetes deployment
+          command: |
+            kubectl run guy-homepage --image=gcr.io/homepage-201807/blah:$CIRCLE_SHA1 --port=80 && \
+            kubectl expose deployment guy-homepage --type="LoadBalancer"
+
 workflows:
   version: 2
-  build-containerise:
+  build-containerise-deploy-production:
     jobs:
       - build
       - containerise:
           requires:
             - build
+      - deploy-production:
+          requires:
+            - containerise
