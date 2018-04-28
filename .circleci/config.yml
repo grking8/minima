@@ -7,13 +7,47 @@ jobs:
     working_directory: /srv/jekyll
     steps:
       - checkout
-      - run: echo $(whoami)
-      - run: echo $(pwd)
-      - run: echo $(which jekyll)
-      - run: jekyll --version
+      - run:
+          name: Create directory for Jekyll build files
+          command: mkdir -p _site
+      - run:
+          name: Output Jekyll build files into directory above
+          command: jekyll build
+          environment:
+            JEKYLL_ENV: production
+      - persist_to_workspace:
+          root: /srv/jekyll
+          paths:
+            - _site
+
+  containerise:
+    docker:
+      - image: google/cloud-sdk:latest
+    steps:
+      - setup_remote_docker
+      - checkout
+      - attach_workspace:
+          at: _site
+      - run:
+          name: Authenticate google cloud
+          command: |
+            echo "$GCLOUD_SERVICE_KEY" | base64 --decode > ${HOME}/gcloud-service-key.json && \
+            gcloud auth activate-service-account --key-file=${HOME}/gcloud-service-key.json && \
+            gcloud config set project homepage-201807 && \
+            gcloud config set compute/zone us-central1-a && \
+            gcloud auth configure-docker
+      - run:
+          name: Build docker image
+          command: docker build --tag grc.io/homepage-201807/blah:${CIRCLE_SHA1} .
+      - run:
+          name: Push docker image
+          command: docker push gcr.io/homepage-201807/blah:${CIRCLE_SHA1}
 
 workflows:
   version: 2
-  build:
+  build-containerise:
     jobs:
       - build
+      - containerise:
+          requires:
+            - build
