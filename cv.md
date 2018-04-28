@@ -2,7 +2,7 @@
 layout: page
 title: CV
 permalink: /cv/
-order: 5
+order: 4
 ---
 
 # Summary
