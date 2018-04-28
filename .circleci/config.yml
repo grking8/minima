@@ -27,7 +27,7 @@ jobs:
       - setup_remote_docker
       - checkout
       - attach_workspace:
-          at: _site
+          at: .
       - run:
           name: Authenticate google cloud
           command: |
