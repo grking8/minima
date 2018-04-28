@@ -38,10 +38,10 @@ jobs:
             gcloud auth configure-docker
       - run:
           name: Build docker image
-          command: docker build --tag "grc.io/homepage-201807/blah:${CIRCLE_SHA1}" .
+          command: docker build --tag "gcr.io/homepage-201807/blah:$CIRCLE_SHA1" .
       - run:
           name: Push docker image
-          command: docker push "gcr.io/homepage-201807/blah:${CIRCLE_SHA1}"
+          command: docker push "gcr.io/homepage-201807/blah:$CIRCLE_SHA1"
 
 workflows:
   version: 2
