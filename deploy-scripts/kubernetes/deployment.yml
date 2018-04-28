@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: homepage-blog
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+      - env:
+        image: gcr.io/homepage-201807/blah:$CIRCLE_SHA1
+        imagePullPolicy: Always
+        name: homepage-blog
+        ports:
+        - containerPort: 80

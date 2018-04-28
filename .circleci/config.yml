@@ -47,6 +47,7 @@ jobs:
     docker:
       - image: google/cloud-sdk:latest
     steps:
+      - checkout
       - run:
           name: Authenticate google cloud
           command: |
@@ -57,10 +58,11 @@ jobs:
             gcloud auth configure-docker && \
             gcloud container clusters get-credentials cluster-1
       - run:
-          name: Create kubernetes deployment
+          name: Create kubernetes deployment and expose deployment
           command: |
-            kubectl run guy-homepage --image=gcr.io/homepage-201807/blah:$CIRCLE_SHA1 --port=80 && \
-            kubectl expose deployment guy-homepage --type="LoadBalancer"
+            cd deploy-scripts/kubernetes && \
+            envsubst < deployment.yml | kubectl apply -f - && \
+            kubectl create -f service.yml
 
 workflows:
   version: 2
