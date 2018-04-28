@@ -10,6 +10,9 @@ spec:
     matchLabels:
       name: homepage-blog
   template:
+    metadata:
+      labels:
+        name: homepage-blog
     spec:
       containers:
       - env:
