@@ -9,7 +9,7 @@ jobs:
       - checkout
       - run:
           name: Build Jekyll markdown into static files for deployment
-          command: ./deploy-scripts/scripts/build-jekyll.sh
+          command: deploy-scripts/scripts/build-jekyll.sh
           environment:
             JEKYLL_ENV: production
       - persist_to_workspace:
