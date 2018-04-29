@@ -8,11 +8,8 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Create directory for Jekyll build files
-          command: mkdir -p _site
-      - run:
-          name: Output Jekyll build files into directory above
-          command: jekyll build
+          name: Build Jekyll markdown into static files for deployment
+          command: ./deploy-scripts/scripts/build-jekyll.sh
           environment:
             JEKYLL_ENV: production
       - persist_to_workspace:
