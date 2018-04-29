@@ -9,7 +9,7 @@ order: 4
 
 *2017 --*
 <details> 
-  <summary>Developer42342342342, <a href="https://lambertlabs.com/">Lambert Labs</a></summary>
+  <summary>Developer, <a href="https://lambertlabs.com/">Lambert Labs</a></summary>
   <br>
   Established team member
   <ul>
