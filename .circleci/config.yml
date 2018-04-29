@@ -24,9 +24,7 @@ jobs:
       GCLOUD_PROJECT: homepage-201807
       GCLOUD_COMPUTE_ZONE: us-central1-a
       GCLOUD_K8_CLUSTER: cluster-1
-      GCLOUD_SERVICE_KEY_PATH: "$HOME"/gcloud-service-key.json
       DOCKER_CONTAINER_REGISTRY: gcr.io
-      DOCKER_TAG: "$DOCKER_CONTAINER_REGISTRY"/"$GCLOUD_PROJECT"/"$CIRCLE_PROJECT_REPONAME":"$CIRCLE_SHA1"
     steps:
       - setup_remote_docker
       - checkout
@@ -37,10 +35,10 @@ jobs:
           command: deploy-scripts/scripts/authenticate-gcloud.sh
       - run:
           name: Build docker image
-          command: docker build --tag "$DOCKER_TAG" .
+          command: docker build --tag "$DOCKER_CONTAINER_REGISTRY"/"$GCLOUD_PROJECT"/"$CIRCLE_PROJECT_REPONAME":"$CIRCLE_SHA1" .
       - run:
           name: Push docker image
-          command: docker push "$DOCKER_TAG"
+          command: docker push "$DOCKER_CONTAINER_REGISTRY"/"$GCLOUD_PROJECT"/"$CIRCLE_PROJECT_REPONAME":"$CIRCLE_SHA1"
 
   deploy-production:
     docker:

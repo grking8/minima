@@ -2,6 +2,7 @@
 
 set xe
 
+GCLOUD_SERVICE_KEY_PATH="$HOME"/gcloud-service-key.json
 echo "$GCLOUD_SERVICE_KEY" | base64 --decode --ignore-garbage > "$GCLOUD_SERVICE_KEY_PATH"
 gcloud auth activate-service-account --key-file="$GCLOUD_SERVICE_KEY_PATH"
 gcloud config set project "$GCLOUD_PROJECT"
