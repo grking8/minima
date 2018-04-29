@@ -43,24 +43,19 @@ jobs:
   deploy-production:
     docker:
       - image: google/cloud-sdk:latest
+    environment:
+      GCLOUD_PROJECT: homepage-201807
+      GCLOUD_COMPUTE_ZONE: us-central1-a
+      GCLOUD_K8_CLUSTER: cluster-1
+      DOCKER_CONTAINER_REGISTRY: gcr.io
     steps:
       - checkout
       - run:
           name: Authenticate google cloud
-          command: |
-            echo "$GCLOUD_SERVICE_KEY" | base64 --decode --ignore-garbage > ${HOME}/gcloud-service-key.json && \
-            gcloud auth activate-service-account --key-file=${HOME}/gcloud-service-key.json && \
-            gcloud config set project homepage-201807 && \
-            gcloud config set compute/zone us-central1-a && \
-            gcloud auth configure-docker && \
-            gcloud container clusters get-credentials cluster-1
+          command: deploy-scripts/scripts/authenticate-gcloud.sh
       - run:
-          name: Create kubernetes deployment and expose deployment
-          command: |
-            apt-get -y install gettext-base && \
-            cd deploy-scripts/kubernetes && \
-            envsubst < deployment.yml | kubectl apply -f - && \
-            kubectl create -f service.yml
+          name: Create and expose kubernetes deployment
+          command: deploy-scripts/scripts/deploy.sh
 
 workflows:
   version: 2
