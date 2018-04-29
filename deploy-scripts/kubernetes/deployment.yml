@@ -1,22 +1,22 @@
 apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
-  name: homepage-blog
+  name: "$CIRCLE_PROJECT_REPONAME"
   labels:
-    name: homepage-blog
+    name: "$CIRCLE_PROJECT_REPONAME"
 spec:
   replicas: 1
   selector:
     matchLabels:
-      name: homepage-blog
+      name: "$CIRCLE_PROJECT_REPONAME"
   template:
     metadata:
       labels:
-        name: homepage-blog
+        name: "$CIRCLE_PROJECT_REPONAME"
     spec:
       containers:
       - env:
-        image: gcr.io/homepage-201807/blah:$CIRCLE_SHA1
+        image: "$DOCKER_CONTAINER_REGISTRY"/"$GCLOUD_PROJECT"/"$CIRCLE_PROJECT_REPONAME":"$CIRCLE_SHA1"
         imagePullPolicy: Always
         name: homepage-blog
         ports:

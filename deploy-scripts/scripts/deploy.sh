@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set xe
+set -xe
 
 apt-get -y install gettext-base
 cd deploy-scripts/kubernetes
