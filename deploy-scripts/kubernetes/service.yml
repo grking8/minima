@@ -1,14 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: $CIRCLE_PROJECT_REPONAME
-  labels:
-    name: $CIRCLE_PROJECT_REPONAME
-spec:
-  type: LoadBalancer
-  loadBalancerIP: 104.154.196.42
-  ports:
-  - port: 80
-    targetPort: 80
-  selector:
-    name: $CIRCLE_PROJECT_REPONAME
+  name: $CIRCLE_PROJECT_REPONAME-service
+spec:  # defines behaviour of service
+  selector:  # route service traffic to pod(s) with label keys and values matching this selector
+    app: jekyll-nginx
+  externalIPs:  # for which nodes will accept traffic for this service
+  - 104.154.196.42
+  ports:  # ports exposed by service
+  - port: 80  # exposed port
+    targetPort: 80  # number or name of port to access on pod(s) targeted by service; matches `EXPOSE 80` in Dockerfile
