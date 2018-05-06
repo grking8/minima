@@ -2,6 +2,8 @@ apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
   name: $CIRCLE_PROJECT_REPONAME
+  labels:
+    app: jekyll-ngnix  # required for `matchLabels` to work
 spec:  # specification of desired behaviour of deployment
   selector:  # label selector for pods; must match pod template's labels
     matchLabels:
