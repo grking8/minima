@@ -49,7 +49,7 @@ for [Apache](https://httpd.apache.org/).
 
 Conceptually, this is probably the simplest approach:
 
-<img src="../../..{{  site.baseurl  }}/assets/images/posts/2018-05-01-jekyll-continuous-deployment-with-github-circleci-kubernetes-and-google-cloud-platform-part-1/server.png" height="700" width="700" alt="cercle trigonometrique"> 
+<img src="../../..{{  site.baseurl  }}/assets/images/posts/2018-05-01-jekyll-continuous-deployment-with-github-circleci-kubernetes-and-google-cloud-platform-part-1/server.png" height="700" width="700" alt="FTP deployment"> 
 
 However, disadvantages are:
 
@@ -229,7 +229,7 @@ this is [continuous delivery.](https://en.wikipedia.org/wiki/Continuous_delivery
 If it is done automatically and the new release is in a production environment, this is 
 **continuous deployment.**
 
-In Part 2, we will see how we can integrate CircleCI with [Google Cloud Platform](https://cloud.google.com/) to achieve
+In [Part 2](/2018/05/05/jekyll-continuous-deployment-with-github-circleci-kubernetes-and-google-cloud-platform-part-2.html), we will see how we can integrate CircleCI with [Google Cloud Platform](https://cloud.google.com/) to achieve
 continuous deployment for our Jekyll site. 
 
 In doing so, we will use containerisation in conjunction with [Kubernetes](https://kubernetes.io/), 
