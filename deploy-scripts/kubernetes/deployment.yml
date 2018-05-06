@@ -2,22 +2,18 @@ apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
   name: $CIRCLE_PROJECT_REPONAME
-  labels:
-    name: $CIRCLE_PROJECT_REPONAME
-spec:
-  replicas: 1
-  selector:
+spec:  # specification of desired behaviour of deployment
+  selector:  # label selector for pods; must match pod template's labels
     matchLabels:
-      name: $CIRCLE_PROJECT_REPONAME
-  template:
+      app: jekyll-nginx
+  template:  # pod definition
     metadata:
       labels:
-        name: $CIRCLE_PROJECT_REPONAME
-    spec:
-      containers:
-      - env:
+        app: jekyll-nginx
+    spec:  # specification of desired behaviour of pod
+      containers:  # containers in pod
+      - name: blog-jekyll-nginx
         image: $DOCKER_CONTAINER_REGISTRY/$GCLOUD_PROJECT/$CIRCLE_PROJECT_REPONAME:$CIRCLE_SHA1
         imagePullPolicy: Always
-        name: homepage-blog
         ports:
         - containerPort: 80
