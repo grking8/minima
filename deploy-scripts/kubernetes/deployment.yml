@@ -1,7 +1,7 @@
 apiVersion: apps/v1beta2
 kind: Deployment
 metadata:
-  name: $CIRCLE_PROJECT_REPONAME
+  name: $CIRCLE_PROJECT_REPONAME-deployment
   labels:
     app: jekyll-nginx  # required for `matchLabels` to work
 spec:  # specification of desired behaviour of deployment
