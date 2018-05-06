@@ -6,7 +6,7 @@ metadata:
     name: $CIRCLE_PROJECT_REPONAME
 spec:
   type: LoadBalancer
-  loadBalancerIP: 35.202.53.96
+  loadBalancerIP: 104.154.196.42
   ports:
   - port: 80
     targetPort: 80
