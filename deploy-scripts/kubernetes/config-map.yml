@@ -5,7 +5,7 @@ metadata:
 data:
   redirect.conf: |
     server {
-      listen 80 default_server;
+      listen 80;
       location / {
         return 200;
       }
