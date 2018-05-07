@@ -6,10 +6,6 @@ data:
   redirect.conf: |
     server {
       listen 80;
-      server_name 107.178.255.87;
-      if ($http_x_forwarded_proto = "http") {
-        return 301 https://$host$request_uri;
-      }
       location / {
         return 200;
       }
