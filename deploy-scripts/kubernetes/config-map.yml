@@ -6,6 +6,7 @@ data:
   redirect.conf: |
     server {
       listen 80;
+      server_name _;
       location / {
         return 200;
       }
