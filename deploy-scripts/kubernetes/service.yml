@@ -5,8 +5,7 @@ metadata:
 spec:  # defines behaviour of service
   selector:  # route service traffic to pod(s) with label keys and values matching this selector
     app: jekyll-nginx
-  type:  LoadBalancer  # determines how service is exposed
-  loadBalancerIP: 35.184.183.211  # only applies to `type: LoadBalancer`; supported by Google Cloud 
+  type:  NodePort  # determines how service is exposed
   ports:  # ports exposed by service
-  - port: 80  # exposed port
-    targetPort: 80  # number or name of port to access on pod(s) targeted by service; matches `EXPOSE 80` in Dockerfile
+  - port: 12345  # exposed port
+    targetPort: 80  # number or name of port to access on pod(s) targeted by service; matches `containerPort 80` in deployment.yml
