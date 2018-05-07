@@ -9,4 +9,4 @@ spec:  # defines behaviour of service
   loadBalancerIP: 104.154.196.42  # only applies to `type: LoadBalancer`; supported by Google Cloud 
   ports:  # ports exposed by service
   - port: 80  # exposed port
-    targetPort: 80  # number or name of port to access on pod(s) targeted by service; matches `EXPOSE 80` in Dockerfile
+    targetPort: 80  # number or name of port to access on pod(s) targeted by service; matches `containerPort: 80` in deployment.yml
