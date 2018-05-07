@@ -1,0 +1,10 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: $CIRCLE_PROJECT_REPONAME-ingress
+  annotations:
+    kubernetes.io/ingress.global-static-ip-name: $CIRCLE_PROJECT_REPONAME  # as per name of static IP setup in Google Cloud Console
+spec:
+  backend:
+    serviceName: $CIRCLE_PROJECT_REPONAME-service  # as per `$CIRCLE_PROJECT_REPONAME-service` in service.yml
+    servicePort: 12345  # as per `port: 12345` in service.yml
