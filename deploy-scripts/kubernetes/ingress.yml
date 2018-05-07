@@ -8,3 +8,5 @@ spec:
   backend:
     serviceName: $CIRCLE_PROJECT_REPONAME-service  # as per `$CIRCLE_PROJECT_REPONAME-service` in service.yml
     servicePort: 12345  # as per `port: 12345` in service.yml
+  tls:
+  - secretName: lets-encrypt
