@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: $CIRCLE_PROJECT_REPONAME-ingress
   annotations:
-    kubernetes.io/ingress.global-static-ip-name: homepage-blog  # as per name of static IP setup in Google Cloud Console
+    kubernetes.io/ingress.global-static-ip-name: homepage  # as per name of static IP setup in Google Cloud Console
 spec:
   backend:
     serviceName: $CIRCLE_PROJECT_REPONAME-service  # as per `$CIRCLE_PROJECT_REPONAME-service` in service.yml
