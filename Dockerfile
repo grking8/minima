@@ -1,3 +1,6 @@
 FROM nginx
 
-CMD ["tail", "-f", "/dev/null"]
+COPY ./_site /usr/share/nginx/html
+EXPOSE 8080
+
+CMD ["nginx", "-g", "daemon off;"]
