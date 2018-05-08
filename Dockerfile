@@ -1,6 +1,3 @@
-FROM node:slim
-ADD . /app
-WORKDIR /app
-RUN npm install
-CMD npm start
+FROM nginx
 
+CMD ["tail", "-f", "/dev/null"]
