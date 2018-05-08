@@ -1,5 +1,6 @@
-FROM nginx
+FROM node:slim
+ADD . /app
+WORKDIR /app
+RUN npm install
+CMD npm start
 
-#COPY ./_site /usr/share/nginx/html
-EXPOSE 80
-CMD ["tail", "-f", "/dev/null"]
