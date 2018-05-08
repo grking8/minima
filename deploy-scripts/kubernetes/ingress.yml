@@ -3,10 +3,6 @@ kind: Ingress
 metadata:
   name: $CIRCLE_PROJECT_REPONAME-ingress
 spec:
- rules:
- - http:
-     paths:
-     - path: /
-       backend:
-         serviceName: $CIRCLE_PROJECT_REPONAME-service  # as per `$CIRCLE_PROJECT_REPONAME-service` in service.yml
-         servicePort: 80
+  backend:
+    serviceName: $CIRCLE_PROJECT_REPONAME-service  # as per `$CIRCLE_PROJECT_REPONAME-service` in service.yml
+    servicePort: 80
