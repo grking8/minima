@@ -7,5 +7,5 @@ spec:  # defines behaviour of service
     app: jekyll-nginx
   type:  NodePort  # determines how service is exposed
   ports:  # ports exposed by service
-  - port: 8080  # exposed port
-    targetPort: 8080  # number or name of port to access on pod(s) targeted by service; matches `containerPort: 80` in deployment.yml
+  - port: 80  # exposed port
+    targetPort: 80  # number or name of port to access on pod(s) targeted by service; matches `containerPort: 80` in deployment.yml
