@@ -1,10 +1,10 @@
-## Description
+# Summary
 
 Personal homepage / blog using the Jekyll theme [minima](https://jekyll.github.io/minima/).
 
-## Installation / build instructions
+# Installation
 
-### Linux
+#### Linux
 
 - Clone the git repository.
 
@@ -23,9 +23,7 @@ Personal homepage / blog using the Jekyll theme [minima](https://jekyll.github.i
 
 - Go to `localhost:4000` in the browser
 
-- To check locally the deployment process, install Docker.
-
-### Mac OS X
+#### Mac OS X
 
 - Install Vagrant with an Ubuntu box and `fsnotify`
 
@@ -40,12 +38,6 @@ config.vm.synced_folder "/path/to/host-machine/repo", "/path/to/guest-machine/re
 
 - Install Jekyll. From the project root, `jekyll serve --host=0.0.0.0` Go in the browser to `<ipaddress>:4000` replacing `<ipaddress>` with the one obtained in the third step. You should see the app load.
 
-- Install Docker so that you can check locally the deployment process (hence the use of Vagrant, Docker being easier to run on Linux than Mac OS X).
+# Documentation
 
-## Documentation
-
-Can be found [here.](https://family-guy.github.io/blog/)
- 
-## License
-
-Same as [minima](https://jekyll.github.io/minima/), i.e. [MIT](http://opensource.org/licenses/MIT).
+- [Wiki](https://family-guy.github.io/blog/)
