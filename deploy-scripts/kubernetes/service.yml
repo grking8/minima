@@ -4,7 +4,7 @@ metadata:
   name: $CIRCLE_PROJECT_REPONAME-service
 spec:  # defines behaviour of service
   selector:  # route service traffic to pod(s) with label keys and values matching this selector
-    app: jekyll-nginx
+    run: jekyll-nginx
   type:  NodePort  # determines how service is exposed
   ports:  # ports exposed by service
   - port: 8080  # exposed port
