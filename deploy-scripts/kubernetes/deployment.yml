@@ -17,4 +17,12 @@ spec:  # specification of desired behaviour of deployment
         imagePullPolicy: Always
         ports:
         - containerPort: 8080  # as per `EXPOSE 80` in Dockerfile
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
         
