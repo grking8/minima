@@ -6,17 +6,17 @@ spec:  # specification of desired behaviour of deployment
   selector:  # label selector for pods; must match pod template's labels
     matchLabels:
       app: jekyll-nginx
+  replicas: 1
+  strategy:
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+    type: RollingUpdate
   template:  # pod definition
     metadata:
       labels:
         app: jekyll-nginx
     spec:  # specification of desired behaviour of pod
-      replicas: 1
-      strategy:
-        rollingUpdate:
-          maxSurge: 1
-          maxUnavailable: 1
-        type: RollingUpdate
       containers:  # containers in pod
       - name: blog-jekyll-nginx
         image: nginx
