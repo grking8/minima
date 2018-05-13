@@ -5,7 +5,7 @@ metadata:
 spec:  # defines behaviour of service
   selector:  # route service traffic to pod(s) with label keys and values matching this selector
     app: jekyll-nginx
-  type:  LoadBalancer  # determines how service is exposed
+  type:  NodePort
   ports:  # ports exposed by service
   - port: 8080  # exposed port
     targetPort: 80  # number or name of port to access on pod(s) targeted by service; matches `containerPort: 80` in deployment.yml
