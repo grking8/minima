@@ -21,8 +21,8 @@ jobs:
     docker:
       - image: google/cloud-sdk:latest
     environment:
-      GCLOUD_PROJECT: united-monument-102416
-      GCLOUD_COMPUTE_ZONE: us-central1-a
+      GCLOUD_PROJECT: pocs-204009
+      GCLOUD_COMPUTE_ZONE: europe-west1-b
       GCLOUD_K8_CLUSTER: cluster-1
       DOCKER_CONTAINER_REGISTRY: gcr.io
     steps:
@@ -44,8 +44,8 @@ jobs:
     docker:
       - image: google/cloud-sdk:latest
     environment:
-      GCLOUD_PROJECT: united-monument-102416
-      GCLOUD_COMPUTE_ZONE: us-central1-a
+      GCLOUD_PROJECT: pocs-204009
+      GCLOUD_COMPUTE_ZONE: europe-west1-b
       GCLOUD_K8_CLUSTER: cluster-1
       DOCKER_CONTAINER_REGISTRY: gcr.io
     steps:
