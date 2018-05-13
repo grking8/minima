@@ -20,11 +20,6 @@ jobs:
   containerise:
     docker:
       - image: google/cloud-sdk:latest
-    environment:
-      GCLOUD_PROJECT: pocs-204009
-      GCLOUD_COMPUTE_ZONE: europe-west1-b
-      GCLOUD_K8_CLUSTER: cluster-1
-      DOCKER_CONTAINER_REGISTRY: gcr.io
     steps:
       - setup_remote_docker
       - checkout
@@ -43,11 +38,6 @@ jobs:
   deploy-production:
     docker:
       - image: google/cloud-sdk:latest
-    environment:
-      GCLOUD_PROJECT: pocs-204009
-      GCLOUD_COMPUTE_ZONE: europe-west1-b
-      GCLOUD_K8_CLUSTER: cluster-1
-      DOCKER_CONTAINER_REGISTRY: gcr.io
     steps:
       - checkout
       - run:
