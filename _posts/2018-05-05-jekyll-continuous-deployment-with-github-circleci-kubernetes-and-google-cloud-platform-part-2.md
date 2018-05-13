@@ -34,7 +34,7 @@ done using **Kubernetes.**
 
 4. [Install the Google Cloud SDK](https://cloud.google.com/sdk/docs/quickstart-linux)
 
-5. [Setup Google Container Registry](https://cloud.google.com/container-registry/docs/quickstart) (steps 1 and 3 in "Before you begin")
+5. [Setup Google Container Registry](https://cloud.google.com/container-registry/docs/quickstart) (step 3 "Enable the API")
 
 6. Create a Kubernetes cluster in Google Cloud (**_Kubernetes Engine_** on 
 the left hand side in Google Cloud Console)
@@ -47,6 +47,12 @@ the left hand side in Google Cloud Console)
 9. In CircleCI, **_Settings->Projects_**. Find the repository of your Jekyll website and
 click on the wheel icon in the top right hand corner. On the left hand side, **_Build Settings->Environment Variables_**, 
 then **_Add Variable_** with name: `GCLOUD_SERVICE_KEY`, value: the encoded contents from 8.
+
+10. Same as 9., add remaining environment variables in CircleCI: 
+  - `GCLOUD_PROJECT: <my-project>`
+  - `GCLOUD_COMPUTE_ZONE: <my-zone>`
+  - `GCLOUD_K8_CLUSTER: <my-cluster>`
+  - `DOCKER_CONTAINER_REGISTRY: <my-registry>`
 
 # Optional (recommended) steps
 
@@ -96,10 +102,6 @@ and authenticate the Google Cloud SDK first]
   containerise:
     docker:
       - image: google/cloud-sdk:latest
-    environment:
-      GCLOUD_PROJECT: <my-project>
-      GCLOUD_COMPUTE_ZONE: <my-zone>
-      DOCKER_CONTAINER_REGISTRY: <my-registry>
     steps:
       - setup_remote_docker
       - checkout
@@ -155,10 +157,6 @@ our CircleCI `config.yml` are quite similar to those above:
   deploy-production:
     docker:
       - image: google/cloud-sdk:latest
-    environment:
-      GCLOUD_PROJECT: <my-project>
-      GCLOUD_COMPUTE_ZONE: <my-zone>
-      DOCKER_CONTAINER_REGISTRY: <my-registry>
     steps:
       - checkout
       - run:
@@ -251,9 +249,9 @@ spec:  # defines behaviour of service
   selector:  # route service traffic to pod(s) with label keys and values matching this selector
     app: my-app  # as per label for pod above
   type:  LoadBalancer  # determines how service is exposed
-  loadBalancerIP: 104.154.196.42  # only applies to `type: LoadBalancer`; supported by Google Cloud 
+  loadBalancerIP: <my-static-ip>  # only applies to `type: LoadBalancer`; supported by Google Cloud 
   ports:  # ports exposed by service
-  - port: 80  # exposed port
+  - port: 8080  # exposed port
     targetPort: 80  # number or name of port to access on pod(s) targeted by service; matches `containerPort: 80` in deployment.yml
 ```
 
@@ -263,7 +261,7 @@ YAML files:
 `kubectl apply --validate=true --dry-run=true --filename=<my-kubernetes-file>`
 
 If all goes well and your jobs build successfully in CircleCI, you should be able
-to view your site at the IP address that we just created in Google Cloud.
+to view your site at `<my-static-ip>:8080`.
 
 NB: This might take a few moments, you can check it is ready with `kubectl get services` 
 (assuming you completed the optional steps).
