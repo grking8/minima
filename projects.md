@@ -5,29 +5,28 @@ permalink: /projects/
 order: 3
 ---
 
-- # Personal homepage / blog
-    [Demo](https://guyrking.com)
+- #### Homepage / blog
+    
+    Uses Jekyll theme minima
+    
+    _Docker, Docker Hub, Let's Encrypt, 
+    Google Cloud Platform (Google Compute Engine)_
+    
+    [source, ](https://github.com/family-guy/minima) 
+    [wiki](https://family-guy.github.io/blog/)
 
-    [Source](https://github.com/family-guy/minima) (Markdown, HTML, CSS)
+- #### aiostorage
 
-    [Wiki](https://family-guy.github.io/blog/)
-
-    Technologies
-
-    - Ubuntu, Mac OS X
-    - Docker
-    - Vagrant
-    - Google Compute Engine
+    Asynchronous library for cloud object storage
+    
+    _Python, PyPI, pip, conda, CircleCI, Backblaze, Read the Docs_
+    
+    [source, ](https://github.com/family-guy/aiostorage)
+    [docs, ](http://aiostorage.readthedocs.io/)
+    [wiki](https://family-guy.github.io/aiostorage-wiki/)
 
 <br>
 
-- # Easy German :de:
-    [Source](https://github.com/family-guy/easy-german) (Python)
+# Open source contributions
 
-    [Documentation](http://easygerman.readthedocs.io/en/latest/)
-
-    [Wiki](https://family-guy.github.io/easy-german-wiki/)
-
-    Technologies
-
-    - Mac OS X
+- #### [pytube](https://github.com/nficano/pytube)
