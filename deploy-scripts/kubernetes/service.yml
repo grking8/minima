@@ -8,4 +8,4 @@ spec:  # defines behaviour of service
   type:  NodePort
   ports:  # ports exposed by service
   - port: 8080  # exposed port
-    targetPort: 443  # number or name of port to access on pod(s) targeted by service; matches `containerPort: 443` in deployment.yml; set to 443 because of https redirect
+    targetPort: 80  # number or name of port to access on pod(s) targeted by service; matches `containerPort: 443` in deployment.yml
