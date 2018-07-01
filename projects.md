@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Projects
+title: Projectssdfsdf
 permalink: /projects/
 order: 3
 ---
