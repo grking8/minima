@@ -23,8 +23,8 @@ spec:  # specification of desired behaviour of deployment
           mountPath: /etc/nginx/conf.d
         readinessProbe:
           httpGet:
-            path: /projects
-            port: 443
+            path: /projects/
+            port: 80
           initialDelaySeconds: 5
           periodSeconds: 5
       volumes:
