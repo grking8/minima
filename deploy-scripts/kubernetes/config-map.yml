@@ -3,4 +3,7 @@ kind: ConfigMap
 metadata:
   name: https-redirect
 data:
-  redirect.conf: |
+  nginx.conf: |
+    server {
+      
+    }
