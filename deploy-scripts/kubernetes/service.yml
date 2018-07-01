@@ -9,4 +9,3 @@ spec:  # defines behaviour of service
   ports:  # ports exposed by service
   - port: 8080  # exposed port
     targetPort: 80  # number or name of port to access on pod(s) targeted by service; matches `containerPort: 80` in deployment.yml
-    targetPort: 443  # number or name of port to access on pod(s) targeted by service; matches `containerPort: 443` in deployment.yml

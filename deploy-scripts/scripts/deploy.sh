@@ -8,4 +8,3 @@ envsubst < secrets.yml | kubectl apply -f -
 envsubst < deployment.yml | kubectl apply -f -
 envsubst < service.yml | kubectl apply -f -
 envsubst < ingress.yml | kubectl apply -f -
-
