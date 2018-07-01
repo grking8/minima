@@ -5,7 +5,7 @@ permalink: /projects/
 order: 3
 ---
 
-- # Personal homepage / blog
+- # Personal homepage / blogsdfsdfd
     [Demo](https://guyrking.com)
 
     [Source](https://github.com/family-guy/minima) (Markdown, HTML, CSS)
