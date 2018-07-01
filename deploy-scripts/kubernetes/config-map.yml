@@ -3,4 +3,7 @@ kind: ConfigMap
 metadata:
   name: https-redirect
 data:
-  redirect.conf: #comment
+  redirect.conf: |
+    server {
+      server_name guyrking.com;
+    }
