@@ -6,6 +6,12 @@ data:
   redirect.conf: |
     server {
       listen 80;
+
+      location /nginx-health {
+        access_log off;
+        return 200 "healthy\n";
+      }
+
       server_name guyrking.com;
       if ($http_x_forwarded_proto = "http") {
         return 301 https://$host$request_uri;

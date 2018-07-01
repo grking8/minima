@@ -23,9 +23,8 @@ spec:  # specification of desired behaviour of deployment
           mountPath: /etc/nginx/conf.d
         readinessProbe:
           httpGet:
-            path: /projects
+            path: /nginx-health
             port: 80
-            scheme: HTTP
           initialDelaySeconds: 5
           periodSeconds: 5
       volumes:
