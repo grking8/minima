@@ -24,7 +24,7 @@ spec:  # specification of desired behaviour of deployment
         readinessProbe:
           httpGet:
             path: /projects
-            port: 80
+            port: 443
           initialDelaySeconds: 5
           periodSeconds: 5
       volumes:
