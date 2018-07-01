@@ -18,10 +18,4 @@ spec:  # specification of desired behaviour of deployment
         ports:
         - containerPort: 80  # as per `EXPOSE 80` in Dockerfile
         - containerPort: 443  # as per `EXPOSE 443` in Dockerfile
-        volumeMounts:
-        - name: nginx-config
-          mountPath: /etc/nginx/conf.d
-      volumes:
-      - name: nginx-config
-        configMap:
-          name: https-redirect
+
