@@ -6,6 +6,6 @@ data:
   redirect.conf: |
     server {
       listen 80;
-      server_name 35.241.43.171;
+      server_name guyrking.com;
       return 301 https://$host$request_uri;
     }
