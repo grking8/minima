@@ -6,7 +6,4 @@ data:
   redirect.conf: |
     server {
       server_name guyrking.com;
-      if ($http_x_forwarded_proto = "http") {
-        return 301 https://$host$request_uri;
-      }
     }
