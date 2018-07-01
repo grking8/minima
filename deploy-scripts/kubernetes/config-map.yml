@@ -4,6 +4,3 @@ metadata:
   name: https-redirect
 data:
   redirect.conf: |
-    server {
-      server_name guyrking.com;
-    }
