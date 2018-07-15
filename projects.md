@@ -7,7 +7,7 @@ order: 3
 
 - #### Homepage / blog
     
-    Uses Jekyll theme minima
+    Jekyll theme minima
     
     _Docker, Docker Hub, Let's Encrypt, 
     Google Cloud Platform (Google Compute Engine)_
