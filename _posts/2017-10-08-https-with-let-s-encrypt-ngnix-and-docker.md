@@ -95,10 +95,10 @@ to open up port 443;
 
 ```
 --volume=/etc/letsencrypt/:/etc/letsencrypt/
---volume=/etc/ssl/:/etc/ssl/
 ```
 
-to get the certificates on the host instance onto the container;
+to get the certificates (and other required Let's Encrypt files) on the host 
+instance onto the container;
 
 ```
 --volume=/etc/nginx/:/etc/nginx/
