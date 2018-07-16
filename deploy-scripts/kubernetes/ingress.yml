@@ -1,0 +1,10 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: $CIRCLE_PROJECT_REPONAME-ingress
+spec:
+  backend:
+    serviceName: $CIRCLE_PROJECT_REPONAME-service  # as per `$CIRCLE_PROJECT_REPONAME-service` in service.yml
+    servicePort: 8080  # as per `port: 8080` in service.yml
+  tls:
+  - secretName: lets-encrypt

@@ -1,5 +1,6 @@
 FROM nginx:alpine
-RUN addgroup -g 1000 -S www-data \
-&& adduser -u 1000 -D -S -G www-data www-data
 
 COPY ./_site /usr/share/nginx/html
+COPY ./redirect.conf /etc/nginx/conf.d
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
