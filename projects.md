@@ -5,19 +5,24 @@ permalink: /projects/
 order: 3
 ---
 
-- #### Homepage / blog
+- # homepage / blog
     
-    Jekyll theme minima
+    **Jekyll theme minima**
     
-    _Docker, Docker Hub, Let's Encrypt, 
-    Google Cloud Platform (Google Compute Engine)_
+    - master
+    
+        _CircleCI, Kubernetes, Google Cloud Platform (Container Registry, Kubernetes Engine), Let's Encrypt_
+    
+    - gce
+    
+        _Docker Hub, Google Cloud Platform (Compute Engine), Let's Encrypt_
     
     [source, ](https://github.com/family-guy/minima) 
     [wiki](https://family-guy.github.io/blog/)
 
-- #### aiostorage
+- # aiostorage
 
-    Asynchronous library for cloud object storage
+    **Asynchronous library for cloud object storage**
     
     _Python, PyPI, pip, conda, CircleCI, Backblaze, Read the Docs_
     
@@ -25,8 +30,6 @@ order: 3
     [docs, ](http://aiostorage.readthedocs.io/)
     [wiki](https://family-guy.github.io/aiostorage-wiki/)
 
-<br>
-
-# Open source contributions
-
-- #### [pytube](https://github.com/nficano/pytube)
+- # open source contributions
+    
+    - [pytube](https://github.com/nficano/pytube)
