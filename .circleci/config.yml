@@ -55,10 +55,12 @@ workflows:
       - containerise:
           requires:
             - build
-          branches:
-            only: master
+          filters:
+            branches:
+              only: master
       - deploy-production:
           requires:
             - containerise
-          branches:
-            only: master
+          filters:
+            branches:
+              only: master
