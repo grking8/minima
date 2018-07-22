@@ -93,6 +93,7 @@ order: 4
 
 <br>
 *2011 -- 2014*
+<br>
 :   Licence de mathématiques, [Université Montpellier 2](http://www.umontpellier.fr/)
 
 <br>
