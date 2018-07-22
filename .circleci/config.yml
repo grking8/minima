@@ -51,14 +51,19 @@ workflows:
   version: 2
   build-containerise-deploy-production:
     jobs:
-      - build
+      - build:
+          filters:
+            branches:
+              ignore: gce
       - containerise:
           requires:
             - build
-          branches:
-            only: master
+          filters:
+            branches:
+              only: master
       - deploy-production:
           requires:
             - containerise
-          branches:
-            only: master
+          filters:
+            branches:
+              only: master
