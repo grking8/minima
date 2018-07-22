@@ -52,6 +52,9 @@ workflows:
   build-containerise-deploy-production:
     jobs:
       - build
+          filters:
+            branches:
+              ignore: gce
       - containerise:
           requires:
             - build
