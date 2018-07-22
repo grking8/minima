@@ -16,8 +16,8 @@ for personal websites and blogs.
 
 The link above contains documentation on getting started using the default theme.
 
-You can also [choose your own theme](http://jekyllthemes.org/)
-or refer to these [installation instructions.](https://github.com/family-guy/minima)
+You can also choose from one of these [Jekyll themes](http://jekyllthemes.org/)
+or refer to these [Jekyll installation instructions.](https://github.com/family-guy/minima)
 
 Jekyll lets you write your site in [Markdown](https://en.wikipedia.org/wiki/Markdown) which is output into HTML and
 CSS.
@@ -79,7 +79,7 @@ It can be used to **modularise** parts of the deployment process.
 It allows you to switch hardware or cloud technology more easily, e.g. from 
 Amazon EC2 to Google Compute Engine.
 
-The most popular container technology at the time of writing is **Docker** ([see here for a simple use case
+The most popular container technology at the time of writing is **Docker** (see here for [a simple use case
 of Docker](/2017/09/09/docker-a-simple-use-case.html)).
 
 How do we containerise our Jekyll website?
@@ -132,8 +132,8 @@ ones
 
 b) Automating code quality checks
 
-A common technique for b) is to have a temporary build server spin up [(CircleCI)](https://circleci.com/)
-each time code is committed to an online repository [(Github)](https://github.com).
+A common technique for b) is to have a temporary build server spin up, e.g. [CircleCI](https://circleci.com/)
+each time code is committed to a Git hosting provider, e.g. [Github.](https://github.com)
 
 As well as checking the code builds without errors, the build server runs **automated tests**
 and [linters](https://en.wikipedia.org/wiki/Lint_(software)) (code style checks, 
@@ -216,17 +216,17 @@ The next step is for these changes to be reflected in a new release of the softw
 for the changes to be propagated to a version of the software running in a production environment.
 
 However, often the new release of the software will be first mocked in an environment identical 
-(or very similar to) the production environment. This environment is typically called a 
-**staging environment.**
+(or very similar to) the production environment. This environment is typically called 
+**staging.**
 
 If this step is done manually, there will be a non-negligible delay between 
 the time of integration into the main branch and the new release.
 
 If it is done automatically, i.e. integration into the main branch triggers a 
-sequence of actions leading to a new release of the software in a staging environment, 
+sequence of actions leading to a new release of the software in staging, 
 this is [continuous delivery.](https://en.wikipedia.org/wiki/Continuous_delivery)
 
-If it is done automatically and the new release is in a production environment, this is 
+If it is done automatically and the new release is in production, this is 
 **continuous deployment.**
 
 In [Part 2](/2018/05/05/jekyll-continuous-deployment-with-github-circleci-kubernetes-and-google-cloud-platform-part-2.html), we will see how we can integrate CircleCI with [Google Cloud Platform](https://cloud.google.com/) to achieve
